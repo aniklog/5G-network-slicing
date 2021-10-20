@@ -17,9 +17,10 @@ Quagga
 Our implementation of the routing uses quagga. 
 
 Quagga installation: 
+	
 	Step 1: sudo apt-get install quagga
 
-Step 2: Extract router config files from the “quagga.tar.gz” and place them on your desired location.
+        Step 2: Extract router config files from the “quagga.tar.gz” and place them on your desired location.
 	
 	Step 3: Change the user and group ownership for the config files to “quagga”
 		sudo chown quagga:quagga <path>/*.conf
@@ -30,7 +31,7 @@ Step 2: Extract router config files from the “quagga.tar.gz” and place them 
 	Step 5: Copy the path to the new location of the router config files.
 
 
-Step 6: Open the “Geneve_VOIP.py” file and change the “path” variable value with the new file location ( it’s under section “Configuring OSPF/Quagga Configuration”).
+        Step 6: Open the “Geneve_VOIP.py” file and change the “path” variable value with the new file location ( it’s under section “Configuring OSPF/Quagga Configuration”).
 
 Docker images :
 The docker images can be downloaded from the docker hub  ( https://hub.docker.com/r/manash22/mc_project01 ).
