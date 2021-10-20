@@ -29,6 +29,7 @@ Step 2: Extract router config files from the “quagga.tar.gz” and place them 
 	
 	Step 5: Copy the path to the new location of the router config files.
 
+
 Step 6: Open the “Geneve_VOIP.py” file and change the “path” variable value with the new file location ( it’s under section “Configuring OSPF/Quagga Configuration”).
 
 Docker images :
@@ -59,21 +60,27 @@ You can run the script the directly and the Containernet will download the image
     
     12. dhcpsrv3
 Testing VOIP:
-    1. VOIP registration can be done from two users from each access network as they are running on docker images which already have linphone installed.
+   
+   1. VOIP registration can be done from two users from each access network as they are running on docker images which already have linphone installed.
         a. H1 and H2 in Access network 1
         b. H3 and H4 in Access network 2
         c. Sta5 and Sta6 in Access network 3
-    2. Once you get the prompt of “containernet>” use command “xterm <host> to access the individual host machines.
-    3. Individual tunnels are set between host machines.
+   
+   2. Once you get the prompt of “containernet>” use command “xterm <host> to access the individual host machines.
+   
+   3. Individual tunnels are set between host machines.
         a. H1 and H3
         b. H1 and Sta5
         c. H2 and H4
         d. H2 and Sta6
         e. H3 and Sta5
         f. H4 and Sta6
-    4. Once accessed you can run “linphonec” and once getting the prompt “linphone>” you can register a user “register sip:username@199.199.199.199 199.199.199.199 password”.
-    5. To setup a call use “call <username>”
-    6. User “h101, h102 and sta103” are for demonstration of DHCP service.
+   
+   4. Once accessed you can run “linphonec” and once getting the prompt “linphone>” you can register a user “register sip:username@199.199.199.199 199.199.199.199 password”.
+    
+   5. To setup a call use “call <username>”
+    
+   6. User “h101, h102 and sta103” are for demonstration of DHCP service.
 Note : 
     1. As there are multiple docker images, the program will take some time to run.
     2. If the registration fails then access the VOIP server and restart the kamailio (/etc/init.d/kamailio start”
