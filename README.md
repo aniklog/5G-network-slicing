@@ -37,7 +37,8 @@ Docker images :
 The docker images can be downloaded from the docker hub  ( https://hub.docker.com/r/manash22/mc_project01 ).
 Images needed: 
 You can run the script the directly and the Containernet will download the images by itself. But it is suggested to download them before running the program.
-    1. r1
+   
+   1. r1
     
     2. r3
     
