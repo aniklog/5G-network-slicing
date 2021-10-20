@@ -1,6 +1,7 @@
 # 5G-network-slicing
 5G Network Slicing in an Emulated Network environment : VoIP communication through GENEVE using Docker within Mininet environment
 Containnernet :
+
 Our script use containernet with mininet-wifi support. It needs to be installed on the base machine before running the script.
 Containernet installation:
 Follow the below mentioned steps for the installation.
@@ -14,14 +15,20 @@ Follow the below mentioned steps for the installation.
 
 Quagga
 Our implementation of the routing uses quagga. 
+
 Quagga installation: 
 	Step 1: sudo apt-get install quagga
+
 Step 2: Extract router config files from the “quagga.tar.gz” and place them on your desired location.
+	
 	Step 3: Change the user and group ownership for the config files to “quagga”
 		sudo chown quagga:quagga <path>/*.conf
+	
 	Step 4: Change permision to 640 for the configuration files
 		sudo chmod 777 <path>/*.conf
+	
 	Step 5: Copy the path to the new location of the router config files.
+
 Step 6: Open the “Geneve_VOIP.py” file and change the “path” variable value with the new file location ( it’s under section “Configuring OSPF/Quagga Configuration”).
 
 Docker images :
