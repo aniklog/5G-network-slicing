@@ -5,11 +5,17 @@ Containnernet :
 Our script use containernet with mininet-wifi support. It needs to be installed on the base machine before running the script.
 Containernet installation:
 Follow the below mentioned steps for the installation.
+
 ~$ sudo apt-get install ansible git aptitude
+
 ~$ git clone https://github.com/ramonfontes/containernet.git
+
 ~$ cd containernet/ansible
+
 ~/containernet/ansible$ sudo ansible-playbook -i "localhost," -c local install.yml
+
 ~$ cd ..
+
 ~/containernet$ sudo python setup.py install
 	Source ( https://mininet-wifi.github.io/containernet/)
 
