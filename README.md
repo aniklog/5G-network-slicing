@@ -36,16 +36,27 @@ The docker images can be downloaded from the docker hub  ( https://hub.docker.co
 Images needed: 
 You can run the script the directly and the Containernet will download the images by itself. But it is suggested to download them before running the program.
     1. r1
+    
     2. r3
+    
     3. r5
+    
     4. r14
+    
     5. r15
+    
     6. phone_test_an1
+    
     7. phone_test_an2
+    
     8. phone_wifi
+    
     9. voip
+    
     10. dhcpsrv1
+    
     11. dhcpsrv2
+    
     12. dhcpsrv3
 Testing VOIP:
     1. VOIP registration can be done from two users from each access network as they are running on docker images which already have linphone installed.
