@@ -1,5 +1,11 @@
 # 5G-network-slicing
 5G Network Slicing in an Emulated Network environment : VoIP communication through GENEVE using Docker within Mininet environment
+
+Network Architecture :
+
+![Picture7](https://user-images.githubusercontent.com/57104937/149930153-5e32ca85-d2d5-4191-aab3-e4282023d803.png)
+
+
 Containnernet :
 
 Our script use containernet with mininet-wifi support. It needs to be installed on the base machine before running the script.
