@@ -3,8 +3,9 @@
 
 Network Architecture :
 
-![Picture7](https://user-images.githubusercontent.com/57104937/149930153-5e32ca85-d2d5-4191-aab3-e4282023d803.png)
 
+
+![pics1](https://user-images.githubusercontent.com/57104937/149930730-029bb773-becc-4434-b214-bcb5e9a4c0f0.png)
 
 Containnernet :
 
